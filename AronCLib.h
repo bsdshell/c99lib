@@ -45,7 +45,7 @@ CNode* createNode(void *data){
 }
 
 // 24-05-2021
-// There error here
+// There is error here
 void freeNode(CNode* nodePt, void (*freeObject)(void *)){
   if(nodePt != NULL){
     
@@ -285,10 +285,6 @@ void ppp(const char * format, ... ){
     printf(format);
 }
 
-typedef struct GroupFloat {
-    float data;
-    int count;
-} GroupFloat;
 
 void t(bool predicate, char* str){
   printf("%s=>%s\n", str, predicate ? "true" : "false");
@@ -834,32 +830,6 @@ bool cmpStrN(char* pt1, char* pt2, int len){
 }
 
 
-// Compare an GroupFloat
-bool isEqualGroupFloat(GroupFloat *pt1, GroupFloat* pt2){
-    return pt1->data == pt2->data && pt1->count == pt2->count;
-}
-
-// Compare an array of GroupFloat
-bool isEqualArrayGroupFloat(GroupFloat** pt1, GroupFloat** pt2, const int len){
-    for(int i=0; i<len; i++){
-        if(!isEqualGroupFloat(pt1[i], pt2[i]))
-            return false;
-    }
-    return true;
-}
-
-// KEY: compare int array, array int
-// NOTE: pt1[i] => pointer to int
-//
-// *pt1[i] == **(pt1 + i)
-bool isEqualArrayInt(int** pt1, int** pt2, const int len){
-  for(int i = 0; i < len; i++){
-    // if(*pt1[i] != *pt2[i])
-    if(**(pt1 + i) != **(pt2 + i))
-      return false;
-  }
-  return true;
-}
 
 
 // concat two char* 
@@ -913,17 +883,9 @@ bool cmp(float *a, float* b) {
     return *a <= *b ? true : false;
 }
 
-bool compareArrayPt(float** arr1, float** arr2, int len) {
-    if(arr1 != NULL && arr2 != NULL) {
-        for(int i=0; i<len; i++) {
-            if(arr1[i] != NULL && arr2[i] != NULL && *arr1[i] != *arr2[i])
-                return false;
-        }
-    }
-    return true;
-}
 
 // Partition an array of "any type", with comparator
+/*
 int partitionAny(void** ls, int (*cmp)(const void *, const void *), int lo, int hi) {
     const int len = hi - lo + 1;
     int i=0;
@@ -953,6 +915,7 @@ int partitionAny(void** ls, int (*cmp)(const void *, const void *), int lo, int 
     }
     return (lo + i);
 }
+*/
 
 
 // partition an array of float, return a pivot index
@@ -1000,18 +963,7 @@ float maxList(float* arr, int len){
     return arr[lo];
 }
 
-bool cmpFloat(const float* p1, const float* p2) {
-  return *p1 <= *p2;
-}
 
-bool cmpInt(const int* p1, const int* p2){
-  return *p1 <= *p2;
-}
-
-// Compare GroupFloat according to count
-int cmpGroupFloat(const GroupFloat* p1, const GroupFloat* p2) {
-  return p1->count <= p2->count;
-}
 
 int compare(const void *p1, const void *p2){
     GroupFloat*  gp1 = (GroupFloat*)p1;  // cast void* => GroupFloat*
@@ -1019,25 +971,6 @@ int compare(const void *p1, const void *p2){
     return gp1 -> count <= gp2 -> count;
 }
 
-// Quicksort any array type with comparator
-void quickSortAny(void** ls, int (*cmp)(const void*, const void*), int lo, int hi) {
-    if ( lo < hi) {
-        int p = partitionAny(ls, cmp, lo, hi);
-        quickSortAny(ls, cmp, lo, p-1);
-        quickSortAny(ls, cmp, p+1, hi);
-    }
-}
-
-// Compare two float array
-bool compareArrayF(float* arr1, int len1, float* arr2, int len2) {
-    if(arr1 != NULL && arr2 != NULL && len1 == len2) {
-        for(int i=0; i<len1; i++) {
-            if(arr1[i] != arr2[i])
-                return false;
-        }
-    }
-    return true;
-}
 
 bool compareArray(char* arr1, int len1, char* arr2, int len2) {
     if(notNull(arr1) && notNull(arr2) && len1 == len2) {
@@ -1112,6 +1045,7 @@ void group(float* arr, const unsigned int len, GroupFloat* tempInfo[], int* grou
 }
 
 // Compute the most frequency of temprature.
+/*
 void modeInfo(float* arr, const unsigned int len, GroupFloat** tempGroup, int* nGroup) {
     int lo = 0;
     int hi = len - 1;
@@ -1128,6 +1062,7 @@ void modeInfo(float* arr, const unsigned int len, GroupFloat** tempGroup, int* n
         exit(EXIT_FAILURE);
     }
 }
+*/
 
 /**
 * Compute the most frequently occuring value

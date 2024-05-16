@@ -1,0 +1,150 @@
+
+AronCLib.h,2925
+#define DoubleLinkedList8,119
+const int MAXDIGIT 26,611
+const bool RUNTEST 27,636
+typedef struct CNode 33,728
+  struct CNode* prev;34,751
+  struct CNode* next;35,773
+  void* data;36,795
+} CNode;37,809
+CNode* createNode(39,819
+void freeNode(49,1008
+typedef struct List{List62,1232
+  int size;63,1253
+  CNode* head;64,1265
+  CNode* tail;65,1280
+  int (*compareTo)compareTo66,1295
+  char* (*toString)toString67,1341
+  void (*freeObject)freeObject68,1369
+  void (*addFirst)addFirst69,1398
+  void (*deleteFirst)deleteFirst70,1450
+}List;List72,1493
+List* createList(75,1502
+int compareTo(88,1834
+char* toString(92,1896
+void freeObject(102,1993
+void freeInt(107,2053
+void freeStr(111,2091
+void freeList(115,2130
+void deleteFirst(147,2805
+void deleteLast(170,3265
+void addFirst(191,3634
+void addLast(211,4026
+void deleteIndexNode(227,4364
+void printList(260,5064
+void printListNewLine(268,5219
+void ppp(284,5488
+typedef struct GroupFloat 288,5548
+    float data;289,5576
+    int count;290,5592
+} GroupFloat;291,5607
+void t(293,5622
+void assert(297,5717
+void myassert(301,5819
+int max(308,5932
+int minInt(312,5984
+int minLong(316,6039
+bool isNull1(323,6139
+int factorial(331,6270
+int strToNum(341,6456
+bool notNull(351,6652
+int len(382,7219
+void plen(386,7273
+void zeroArrayInt(394,7388
+void zeroArrayChar(398,7479
+void uniqueOrder(407,7654
+void removeDuplicate(432,8223
+void removeIndexChar(465,8899
+void dropChar(490,9288
+char* dropCharImmutable(522,9822
+int match(589,10886
+void matchStart(602,11103
+void takeChar(606,11157
+List* splitStr(624,11575
+void testit(658,12249
+char* trim(673,12534
+void shiftLeftChar(716,13508
+void shiftRightChar(736,14026
+bool isNull2(783,15038
+bool isEqualStr(795,15278
+bool cmpStr(808,15529
+bool cmpStrN(826,15942
+bool isEqualGroupFloat(838,16164
+bool isEqualArrayGroupFloat(843,16322
+bool isEqualArrayInt(855,16631
+void concat(866,16851
+void copyStrAt(876,17166
+int extract_temperature(889,17614
+bool cmp(912,18183
+bool compareArrayPt(916,18253
+int partitionAny(927,18580
+int partition(959,19324
+void quickSort(988,19954
+float maxList(996,20130
+bool cmpFloat(1003,20255
+bool cmpInt(1007,20329
+int cmpGroupFloat(1012,20437
+int compare(1016,20537
+void quickSortAny(1023,20810
+bool compareArrayF(1032,21078
+bool compareArray(1042,21337
+bool cmpArrayStr(1052,21595
+float mean(1056,21707
+float median(1069,21985
+void group(1087,22435
+void modeInfo(1115,23179
+void mode(1146,23923
+void min_max(1181,25267
+float standarddeviation(1189,25435
+bool compareGroupFloat(1203,25776
+bool compareGroupFloatList(1207,25889
+int line_count(1222,26252
+void read_file(1266,26996
+void repeat_c(1292,27555
+int fileLineCount(1299,27705
+void free2d(1319,27970
+char** readFileToBuffer(1334,28207
+void readFileToList(1374,29014
+void readFileLine(1399,29595
+bool BinarySearch(1418,29911
+void summary(1432,30206
+
+AronCLibNew.h,961
+const char* FALSE_RED 19,317
+long LCG(63,1869
+long randomNum(70,2010
+void printCharPt2d(78,2165
+int strToInt(90,2346
+bool all_digit(113,2798
+char* repeatChar(138,3208
+char** allocateCharPt(149,3399
+void free_allocateCharPt(157,3591
+int fileSize(173,3878
+void pp(198,4421
+void pl(210,4688
+void fl(215,4760
+void fw(221,4854
+void free_splitPath(235,5091
+char** splitPath(251,5393
+void free_splitStrChar(303,6343
+char** splitStrChar(339,7094
+int toLower(402,8331
+int toUpper(406,8375
+char* toUpperStr(413,8443
+char* toLowerStr(427,8670
+bool t_int(439,8874
+bool t_charPt(448,9046
+bool t_bool(463,9397
+bool t_voidPt(472,9573
+char* concatStr(495,9929
+void free_concatStr(514,10264
+void printArrayChar(522,10367
+int strToNumBase(528,10485
+void printArraycharPt(539,10723
+void printArrayfloat(550,10945
+void printArrayint(561,11167
+void printArray2df(586,11600
+void printArray2dint(595,11804
+void* mc(605,12054
+void free2d(620,12426

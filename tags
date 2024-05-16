@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FALSE_RED	AronCLibNew.h	/^const char* FALSE_RED = "\\x1b[0;31m FALSE \\x1b[0;0m";$/;"	v
+GroupFloat	AronCLibNew.h	/^typedef struct GroupFloat {$/;"	s
+GroupFloat	AronCLibNew.h	/^} GroupFloat;$/;"	t	typeref:struct:GroupFloat
+LCG	AronCLibNew.h	/^long LCG(long m, long a, long c, long seed){$/;"	f
+all_digit	AronCLibNew.h	/^bool all_digit(char * str){$/;"	f
+allocateCharPt	AronCLibNew.h	/^char** allocateCharPt(int nCol, int nRow){$/;"	f
+cmpFloat	AronCLibNew.h	/^bool cmpFloat(const float* p1, const float* p2) {$/;"	f
+cmpGroupFloat	AronCLibNew.h	/^int cmpGroupFloat(const GroupFloat* p1, const GroupFloat* p2) {$/;"	f
+cmpInt	AronCLibNew.h	/^bool cmpInt(const int* p1, const int* p2){$/;"	f
+compareArrayF	AronCLibNew.h	/^bool compareArrayF(float* arr1, int len1, float* arr2, int len2) {$/;"	f
+compareArrayPt	AronCLibNew.h	/^bool compareArrayPt(float** arr1, float** arr2, int len) {$/;"	f
+concatStr	AronCLibNew.h	/^char* concatStr(char** pt, int len){$/;"	f
+count	AronCLibNew.h	/^    int count;$/;"	m	struct:GroupFloat
+data	AronCLibNew.h	/^    float data;$/;"	m	struct:GroupFloat
+fileSize	AronCLibNew.h	/^int fileSize(char* fname){$/;"	f
+fillArray	AronCLibNew.h	/^void fillArray(int* arr, int len, int low, int high){$/;"	f
+fillArraySame	AronCLibNew.h	/^void fillArraySame(int* arr, int len, int n){$/;"	f
+fillArrayStart	AronCLibNew.h	/^void fillArrayStart(int* arr, int len, int init){$/;"	f
+fillArrayZero	AronCLibNew.h	/^void fillArrayZero(int* arr, int len){$/;"	f
+fl	AronCLibNew.h	/^void fl(){$/;"	f
+free2d	AronCLibNew.h	/^void free2d(void** pt, int len){$/;"	f
+free_allocateCharPt	AronCLibNew.h	/^void free_allocateCharPt(char** ppt, int nCol){$/;"	f
+free_concatStr	AronCLibNew.h	/^void free_concatStr(char* strPt){$/;"	f
+free_splitPath	AronCLibNew.h	/^void free_splitPath(char ** retppt, int retRow){$/;"	f
+free_splitStrChar	AronCLibNew.h	/^void free_splitStrChar(char ** retppt, int retRow){$/;"	f
+fw	AronCLibNew.h	/^void fw(char* s){$/;"	f
+geneArrayDouble	AronCLibNew.h	/^void geneArrayDouble(double* arr, int len){$/;"	f
+gene_array_double	AronCLibNew.h	/^void gene_array_double(double* arr, int len){$/;"	f
+gene_array_float	AronCLibNew.h	/^void gene_array_float(float* arr, int len){$/;"	f
+isEqualArrayGroupFloat	AronCLibNew.h	/^bool isEqualArrayGroupFloat(GroupFloat** pt1, GroupFloat** pt2, const int len){$/;"	f
+isEqualArrayInt	AronCLibNew.h	/^bool isEqualArrayInt(int** pt1, int** pt2, const int len){$/;"	f
+isEqualGroupFloat	AronCLibNew.h	/^bool isEqualGroupFloat(GroupFloat *pt1, GroupFloat* pt2){$/;"	f
+mc	AronCLibNew.h	/^void* mc(int n, char arr[10]){$/;"	f
+partition	AronCLibNew.h	/^long partition(long lo, long hi, int* arr){$/;"	f
+partitionAny	AronCLibNew.h	/^int partitionAny(void** ls, int (*cmp)(const void *, const void *), int lo, int hi) {$/;"	f
+partition_array	AronCLibNew.h	/^int partition_array(int* arr, int lo, int hi) {$/;"	f
+pl	AronCLibNew.h	/^void pl(const char * format, ... ){$/;"	f
+pp	AronCLibNew.h	/^void pp(const char * format, ... ){$/;"	f
+printArray2df	AronCLibNew.h	/^void printArray2df(int height, int width, float** arr){$/;"	f
+printArray2dint	AronCLibNew.h	/^void printArray2dint(int height, int width, int** arr){$/;"	f
+printArrayChar	AronCLibNew.h	/^void printArrayChar(const char* arr[], int size){$/;"	f
+printArrayFixed	AronCLibNew.h	/^void printArrayFixed(float* pt, int len, int nCol){$/;"	f
+printArrayFixedD	AronCLibNew.h	/^void printArrayFixedD(double* pt, int len, int nCol){$/;"	f
+printArrayFixedint	AronCLibNew.h	/^void printArrayFixedint(int* pt, int len, int nCol){$/;"	f
+printArraycharPt	AronCLibNew.h	/^void printArraycharPt(char* arr, int len){$/;"	f
+printArrayfloat	AronCLibNew.h	/^void printArrayfloat(float* arr, int len){$/;"	f
+printArrayint	AronCLibNew.h	/^void printArrayint(int* arr, int len){$/;"	f
+printCharPt2d	AronCLibNew.h	/^void printCharPt2d(char** pt, int nCol){$/;"	f
+print_array_double	AronCLibNew.h	/^void print_array_double(double* pt, int len, int nCol){$/;"	f
+print_array_float	AronCLibNew.h	/^void print_array_float(float* pt, int len, int nCol){$/;"	f
+print_array_int	AronCLibNew.h	/^void print_array_int(int* pt, int len, int nCol){$/;"	f
+quickSortAny	AronCLibNew.h	/^void quickSortAny(void** ls, int (*cmp)(const void*, const void*), int lo, int hi) {$/;"	f
+quickSortInt	AronCLibNew.h	/^void quickSortInt(long lo, long hi, int* arr){$/;"	f
+quick_sort	AronCLibNew.h	/^void quick_sort(int* arr, int lo, int hi) {$/;"	f
+randomNum	AronCLibNew.h	/^long randomNum(long seed){$/;"	f
+repeatChar	AronCLibNew.h	/^char* repeatChar(int n, char c){$/;"	f
+splitPath	AronCLibNew.h	/^char** splitPath(char* buf, int bufLen, int *retRow, char c){$/;"	f
+splitStrChar	AronCLibNew.h	/^char** splitStrChar(char* buf, int bufLen, int *retRow, char c){$/;"	f
+strToInt	AronCLibNew.h	/^int strToInt(char* str){$/;"	f
+strToNumBase	AronCLibNew.h	/^int strToNumBase(const char* sp, int base){$/;"	f
+swap	AronCLibNew.h	/^void swap(int* arr, int i, int j) {$/;"	f
+t_bool	AronCLibNew.h	/^bool t_bool(bool n, bool m, char* msg){$/;"	f
+t_charPt	AronCLibNew.h	/^bool t_charPt(char* s1, char* s2, char* msg){$/;"	f
+t_doublePt	AronCLibNew.h	/^bool t_doublePt(int m, double* s1, int n, double* s2, char* msg){$/;"	f
+t_int	AronCLibNew.h	/^bool t_int(int m, int n, char* msg){$/;"	f
+t_intPtr	AronCLibNew.h	/^bool t_intPtr(int len1, int* arr1, int len2, int* arr2, char* msg) {$/;"	f
+t_voidPt	AronCLibNew.h	/^bool t_voidPt(void* pt0, void* pt1, char* msg){$/;"	f
+time_micro	AronCLibNew.h	/^uint64_t time_micro() {$/;"	f
+time_nano	AronCLibNew.h	/^uint64_t time_nano() {$/;"	f
+time_second	AronCLibNew.h	/^uint64_t time_second(){$/;"	f
+toLower	AronCLibNew.h	/^int toLower(int c){$/;"	f
+toLowerStr	AronCLibNew.h	/^char* toLowerStr(char* s){$/;"	f
+toUpper	AronCLibNew.h	/^int toUpper(int c){$/;"	f
+toUpperStr	AronCLibNew.h	/^char* toUpperStr(char* s){$/;"	f
