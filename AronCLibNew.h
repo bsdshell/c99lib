@@ -28,6 +28,7 @@ const char* FALSE_RED = "\x1b[0;31m FALSE \x1b[0;0m";
 // compare c primitives
 bool t_int(int n, int m, char* str);
 bool t_intPtr(int m, int* ptr0, int n, int* ptr1, char* msg);
+bool t_array_int(int m, int* ptr0, int n, int* ptr1, char* msg);
 bool t_charPt(char* s1, char* s2, char* msg);
 bool t_str(char* s1, char* s2, char* msg);
 bool t_bool(bool a, bool b, char* msg);
@@ -589,6 +590,10 @@ bool t_intPtr(int len1, int* arr1, int len2, int* arr2, char* msg) {
       }
     }
     return ret;
+}
+
+bool t_array_int(int len1, int* arr1, int len2, int* arr2, char* msg) {
+  t_intPtr(len1, arr1, len2, arr2, msg);
 }
 
 
@@ -1262,6 +1267,23 @@ int foldl_int(int(*pt)(int, int), int id, int* arr, int len){
   }
   return acc;
 }
+
+float foldl_float(float(*pt)(float, float), float id, float* arr, int len){
+  float acc = id;
+  for(int i = 0; i < len; i++){
+	 acc = (*pt)(acc, arr[i]);
+  }
+  return acc;
+}
+
+double foldl_double(double(*pt)(double, double), double id, double* arr, int len){
+  double acc = id;
+  for(int i = 0; i < len; i++){
+	 acc = (*pt)(acc, arr[i]);
+  }
+  return acc;
+}
+
 
 /*
  KEY: print 2d array, print matrix
