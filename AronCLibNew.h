@@ -1331,7 +1331,7 @@ void print_matrix_float(float* arr, int len, int width){
   int nCol = width;
   char buf[50];
   
-  int* maxArr = (float*)malloc(sizeof(int) * width);
+  int* maxArr = (int*)malloc(sizeof(int) * width);
   float* colArr = (float*)malloc(sizeof(float) * nRow);
   
   for(int i = 0; i < width; i++){

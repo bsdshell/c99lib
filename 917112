@@ -1,0 +1,9 @@
+491818:*:emacs tags, tags file, etags, ctags
+etags -e -f $PWD/TAGS $cpplib/AronLib $b/clib/AronCLibNew.h
+etags -f emacs_tags try.c    # c99 ctags file. In Emacs (setTagsTable "emacs_tags")
+ctags
+option
+-a  => append tags to an existing tag file
+-e  => for emacs file
+-R  => recursive
+--help

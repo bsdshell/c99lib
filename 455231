@@ -1,0 +1,171 @@
+491818:*:emacs tags, tags file, etags, ctags
+etags -e -f $PWD/TAGS $cpplib/AronLib $b/clib/AronCLibNew.h
+etags -f emacs_tags try.c    # c99 ctags file. In Emacs (setTagsTable "emacs_tags")
+ctags
+option
+-a  => append tags to an existing tag file
+-e  => for emacs file
+-R  => recursive
+--helpcpp_ctags:*: cpp ctags, ctags, cpp tag
+# DOES not work any more with -e illegal option
+/usr/local/bin/ctags -f TAGS -e --extra=+q  -R  $b/cpplib   # tags ctagsemacs_defintion:*: emacs jump, emacs key defintion, ctags, tags @=735
+--------------------------------------------------------------------------------
+C-x [             # goto the begin of a file, top of a file, beginning-of-buffer
+C-x ]             # goto the end of a file, bottom of a file end-of-buffer
+--------------------------------------------------------------------------------
+M-.                          # jump to tags, jump to ctags jump to defintion
+M-,                          # jump back from tags, jump back from ctags
+emacs_key:*: emacs key mark, emacs key jump, emacs mark, emacs jump, emacs marker, emacs location@=737
+C-x r <Space> a              # Use letter 'a' to mark location
+C-x r j a                    # Jump back to location 'a'
+--------------------------------------------------------------
+M-m                          # Mark, marker
+M-j                          # Jump, jump to
+emacs_key:*: emacs key, emacs open path, cursor path@=506
+M-x find-file-at-point   # open path, open directory, cursor path, cursor directory
+emacs_key:*: emacs key, shortcut emacs@=57
+ALT-Up/Down                  # Move list up and down, very useful
+ALT-Left/Right               # Shift list to left or right
+--------------------------------------------------------------------------------
+M-x intero-restart           # restart intero
+--------------------------------------------------------------------------------
+C-x 8 RET unicode number     # input unicode in org mode, unicode input
+--------------------------------------------------------------------------------
+M =>                         # caps lock on MacBookP and Big Keyboard
+M-x org-mode                 # load orgmode
+C-c C-x C-l                  # run Latex snippet
+--------------------------------------------------------------------------------
+C-s char                     # jump to char
+M-% string RET newString RET # search and replace
+M-x eval-buffer              # reload abbrev_defs
+C-x -/+                      # increase/decrease font size
+C-x e                        # evaluate lisp
+C-x C-e                      # evaluate lisp from current cursor, scratch buffer
+M-x abbre-mode               # enable abbrev mode
+M-/                          # auto complete
+C-x RET C-\ TeX RET          # input latex char, latex input
+M-!                          # shell_command => Vim:ls
+--------------------------------------------------------------------------------
+-- Moving
+C-l moving to bottom => l = lower?
+C-v M-v                      # page up, page down
+--------------------------------------------------------------------------------
+C-x 1                        # maximize current buffer
+C-x 2                        # split window horizonally
+C-x 3                        # split window vertically
+C-x 0                        # close current buffer
+C-z                          # goto background fg => back to foreground
+--------------------------------------------------------------------------------
+M-x shell                    # run shell within Emacs
+M-x !                        # run shell command
+M-:                          # ALT-: run lisp code, evaluate expression
+M-x %                        # search and replace
+M-k                          # kill line, emacs kill line, emacs delete line
+--------------------------------------------------------------------------------
+[see => ~/.emacs]
+C-a C-e                      # move cursor to begin and End of line
+C-n C-p                      # move line down, line up
+C-f                          # move cursor word forward
+C-b                          # move cursor word backward
+--------------------------------------------------------------------------------
+C-k                          # kill all word to end of line or end of sentence
+C-u/C-_                      # undo
+C-r C-r                      # backward search goto next occurrent
+C-s C-s                      # search goto next occurrent
+C-x C-f                      # find file
+C-s                          # search file I-search
+C-x C-s                      # save file
+C-x b                        # switch buffer
+C-x o                        # switch to other window
+--------------------------------------------------------------------------------
+C-x Spa                      # set mark, selection in vim
+S-Left or S-Right            # select with Left and Right key, it is much easier.
+M-w                          # copy
+C-y                          # paste  => Vim y => yanked
+--------------------------------------------------------------------------------
+S-Left/Right                 # select text
+C-x Tab                      # shift text, shift line, alignment, indentation mode
+S-Left/Right                 # indentation
+--------------------------------------------------------------------------------
+C-x C-b                      # list buffer
+M-:                          # MacOS (alt shift) :
+M-:                          # caps lock : => evaluate elisp
+M-g M-g                      # Alt g, Alt g => goto-line
+C-x C-c                      # exit Emacs
+F1                           # help command
+C-x -/+                      # increase decrease font
+--------------------------------------------------------------------------------
+M-x load-theme RET themename                     # load theme, color scheme
+M-x list-packages  'i' => mark, 'x' => install   # select package to install
+C-c C-c => compile, C-c C-c => view              # Latex
+C-c C-h => See all Auctex shortcut               # Auctex
+C-c ] => close latex environment
+F3                                               # start define Macro
+F4                                               # end define Macro
+F4                                               # repeat Macro
+----------------------------------------------
+add the followig to .emacs file for agda-mode in Emacs
+(load-file (let ((coding-system-for-read 'utf-8))
+(shell-command-to-string "/usr/local/Cellar/agda/2.5.4.1/bin/agda-mode locate")))
+--------------------------------------------------------------------------------
+M-x describe-input-method
+find TeX input
+M-x describe-input-method => TeX => see all Tex Input in Emacs
+remaping many Emacs default keys binding
+--------------------------------------------------------------------------------
+C-h v                              # Describle variable: user-init-file
+--------------------------------------------------------------------------------
+M-x describe-function RET
+print
+--------------------------------------------------------------------------------
+C-s => forward search char 'a' => 'c' => press DEL  # delete selection
+--------------------------------------------------------------------------------
+C-x Space => M-w => C-y            # select => copy => paste
+--------------------------------------------------------------------------------
+C-x {                              # shrink the width of a window
+C-x }                              # enlarge the width of a window
+-------------------------------------------------------------------------------
+C-x z => z                         # repeat last command
+-------------------------------------------------------------------------------
+C-x eval-buffer                    # elisp on scratch buffer
+-------------------------------------------------------------------------------
+(thing-at-point 'word 'properties) # get current cursor word
+(shell-command-to-string '/Users/cat/myfile/symbin/redis_query.hs')
+C-c C-e h h
+-------------------------------------------------------------------------------
+M-x kill-buffer                    # kill buffer, delete file from buffer :bd file in Vim
+-------------------------------------------------------------------------------
+C-h k                              # find key mapping
+C-h w                              # which key a function is mapping to, e.g  forward-line
+C-h v                              # variable definition
+-------------------------------------------------------------------------------
+C-u M-x shell                      # run multiple shell
+emacs_latex:*: latex emacs, emacs latex, latex key, emacs key, auctex@=58
+C-c C-c  # compile latex
+C-c C-l  # view pdf file
+-------------------------------------
+M-tab or ALT-tab # auctex autocomplete symbol
+C-c C-e          # autocomplete environment
+C-c C-m          # autocomplete macro
+C-c C-s          # autocomplete section
+C-c ]            # close latex environment
+C-c ~            # switch to math mode
+`                # autocomplete in math mode, a => alpha
+--
+M-x load-theme RET themename                     # load theme, color scheme
+M-x list-packages  'i' => mark, 'x' => install   # select package to install
+C-c C-c => compile, C-c C-c => view              # Latex
+C-c C-h => See all Auctex shortcut               # Auctex
+F3                                               # start define Macro
+F4                                               # end define Macro
+F4                                               # repeat Macro
+emacs_new_key:*: emacs key, ekey, shortcut emacs@=60
+Ctrl v                       # select current line
+Ctrl n                       # next select line
+emacs_select_code:*: emacs key, select code block, emacs select code, emacs code block, em select@=410
+word 	        mark-word 	        M-@
+paragraph 	mark-paragraph 	        M-h
+page 	        mark-page 	        C-x C-p
+buffer 	        mark-whole-buffer  	C-x h      # select whole buffer, whole page
+function 	mark-defun 	        C-M-h
+balanced expression 	mark-sexp 	C-M-@

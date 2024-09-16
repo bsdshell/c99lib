@@ -4,39 +4,76 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+ARONCLIBDEV	AronCLibDev.h	/^#define ARONCLIBDEV$/;"	d
+ARONCLIBNEW	AronCLibNew.h	/^#define ARONCLIBNEW$/;"	d
 FALSE_RED	AronCLibNew.h	/^const char* FALSE_RED = "\\x1b[0;31m FALSE \\x1b[0;0m";$/;"	v
 GroupFloat	AronCLibNew.h	/^typedef struct GroupFloat {$/;"	s
 GroupFloat	AronCLibNew.h	/^} GroupFloat;$/;"	t	typeref:struct:GroupFloat
 LCG	AronCLibNew.h	/^long LCG(long m, long a, long c, long seed){$/;"	f
+add	AronCLibDev.h	/^int add(int a, int b){ return a + b; };$/;"	f
 all_digit	AronCLibNew.h	/^bool all_digit(char * str){$/;"	f
 allocateCharPt	AronCLibNew.h	/^char** allocateCharPt(int nCol, int nRow){$/;"	f
+arrToStr_int	AronCLibDev.h	/^void arrToStr_int(int* arr, int len, char** strArr){$/;"	f
+assert_c	AronCLibNew.h	/^void assert_c(bool b, char* str){$/;"	f
 cmpFloat	AronCLibNew.h	/^bool cmpFloat(const float* p1, const float* p2) {$/;"	f
 cmpGroupFloat	AronCLibNew.h	/^int cmpGroupFloat(const GroupFloat* p1, const GroupFloat* p2) {$/;"	f
 cmpInt	AronCLibNew.h	/^bool cmpInt(const int* p1, const int* p2){$/;"	f
 compareArrayF	AronCLibNew.h	/^bool compareArrayF(float* arr1, int len1, float* arr2, int len2) {$/;"	f
 compareArrayPt	AronCLibNew.h	/^bool compareArrayPt(float** arr1, float** arr2, int len) {$/;"	f
 concatStr	AronCLibNew.h	/^char* concatStr(char** pt, int len){$/;"	f
+concat_str	AronCLibNew.h	/^void concat_str(char* s1, char* s2, char* retBuf){$/;"	f
 count	AronCLibNew.h	/^    int count;$/;"	m	struct:GroupFloat
 data	AronCLibNew.h	/^    float data;$/;"	m	struct:GroupFloat
+doubleToStr_c	AronCLibDev.h	/^void doubleToStr_c(char* buf, double n){$/;"	f
 fileSize	AronCLibNew.h	/^int fileSize(char* fname){$/;"	f
 fillArray	AronCLibNew.h	/^void fillArray(int* arr, int len, int low, int high){$/;"	f
 fillArraySame	AronCLibNew.h	/^void fillArraySame(int* arr, int len, int n){$/;"	f
 fillArrayStart	AronCLibNew.h	/^void fillArrayStart(int* arr, int len, int init){$/;"	f
 fillArrayZero	AronCLibNew.h	/^void fillArrayZero(int* arr, int len){$/;"	f
 fl	AronCLibNew.h	/^void fl(){$/;"	f
+floatToStr_c	AronCLibDev.h	/^void floatToStr_c(char* buf, float n){$/;"	f
+foldl_double	AronCLibNew.h	/^double foldl_double(double(*pt)(double, double), double id, double* arr, int len){$/;"	f
+foldl_float	AronCLibNew.h	/^float foldl_float(float(*pt)(float, float), float id, float* arr, int len){$/;"	f
+foldl_int	AronCLibNew.h	/^int foldl_int(int(*pt)(int, int), int id, int* arr, int len){$/;"	f
 free2d	AronCLibNew.h	/^void free2d(void** pt, int len){$/;"	f
 free_allocateCharPt	AronCLibNew.h	/^void free_allocateCharPt(char** ppt, int nCol){$/;"	f
 free_concatStr	AronCLibNew.h	/^void free_concatStr(char* strPt){$/;"	f
 free_splitPath	AronCLibNew.h	/^void free_splitPath(char ** retppt, int retRow){$/;"	f
 free_splitStrChar	AronCLibNew.h	/^void free_splitStrChar(char ** retppt, int retRow){$/;"	f
+fun	AronCLibDev.h	/^void fun(int* arr, int len, int width){$/;"	f
+fun3	AronCLibDev.h	/^pair fun3(int a, int b){$/;"	f
 fw	AronCLibNew.h	/^void fw(char* s){$/;"	f
+gcd_array	AronCLibDev.h	/^int gcd_array(int* arr, int len){$/;"	f
+gcd_array_positive	AronCLibDev.h	/^int gcd_array_positive(int* arr, int len){$/;"	f
+gcd_c	AronCLibNew.h	/^int gcd_c(int m, int n){$/;"	f
 geneArrayDouble	AronCLibNew.h	/^void geneArrayDouble(double* arr, int len){$/;"	f
 gene_array_double	AronCLibNew.h	/^void gene_array_double(double* arr, int len){$/;"	f
 gene_array_float	AronCLibNew.h	/^void gene_array_float(float* arr, int len){$/;"	f
+gene_array_int	AronCLibNew.h	/^void gene_array_int(int* arr, int len, int low, int high){$/;"	f
+get_col	AronCLibNew.h	/^void get_col(int* arr, int len, int* colArr, int colInx, int width){$/;"	f
+get_col_float	AronCLibNew.h	/^void get_col_float(float* arr, int len, float* colArr, int colInx, int width){$/;"	f
+get_row	AronCLibNew.h	/^void get_row(int* arr, int len, int* rowArr, int rowInx, int width){$/;"	f
+intToStr_c	AronCLibDev.h	/^void intToStr_c(char* buf, int n){$/;"	f
+inx	AronCLibNew.h	/^int inx(int* arr, int i, int j, int w){$/;"	f
+inx_float	AronCLibNew.h	/^float inx_float(float* arr, int i, int j, int w){$/;"	f
 isEqualArrayGroupFloat	AronCLibNew.h	/^bool isEqualArrayGroupFloat(GroupFloat** pt1, GroupFloat** pt2, const int len){$/;"	f
 isEqualArrayInt	AronCLibNew.h	/^bool isEqualArrayInt(int** pt1, int** pt2, const int len){$/;"	f
 isEqualGroupFloat	AronCLibNew.h	/^bool isEqualGroupFloat(GroupFloat *pt1, GroupFloat* pt2){$/;"	f
+lcm	AronCLibNew.h	/^int lcm(int m, int n){$/;"	f
+malloc2d	AronCLibDev.h	/^void** malloc2d(int hight, int width, char* type){$/;"	f
+matrix_reduce	AronCLibDev.h	/^void matrix_reduce(int* arr, int len, int width){$/;"	f
+maxLenStr_float	AronCLibNew.h	/^int maxLenStr_float(float* arr, int len){$/;"	f
+maxLenStr_int	AronCLibNew.h	/^int maxLenStr_int(int* arr, int len){$/;"	f
 mc	AronCLibNew.h	/^void* mc(int n, char arr[10]){$/;"	f
+mergeSort	AronCLibNew.h	/^void mergeSort(int* a1, int lo, int hi){$/;"	f
+merge_int	AronCLibNew.h	/^void merge_int(int* a, int lo, int mid, int hi){$/;"	f
+mul	AronCLibDev.h	/^int mul(int a, int b){ return a * b; };$/;"	f
+mulRow	AronCLibNew.h	/^void mulRow(int n, int* arr, int r0, int w){$/;"	f
+newline_c	AronCLibNew.h	/^void newline_c(){$/;"	f
+pad_left	AronCLibNew.h	/^void pad_left(char* arr, int n, int c, char* retBuf){$/;"	f
+pad_right	AronCLibNew.h	/^void pad_right(char* arr, int n, int c, char* retBuf){$/;"	f
+pair	AronCLibDev.h	/^typedef struct pair{$/;"	s
+pair	AronCLibDev.h	/^} pair;$/;"	t	typeref:struct:pair
 partition	AronCLibNew.h	/^long partition(long lo, long hi, int* arr){$/;"	f
 partitionAny	AronCLibNew.h	/^int partitionAny(void** ls, int (*cmp)(const void *, const void *), int lo, int hi) {$/;"	f
 partition_array	AronCLibNew.h	/^int partition_array(int* arr, int lo, int hi) {$/;"	f
@@ -55,21 +92,29 @@ printCharPt2d	AronCLibNew.h	/^void printCharPt2d(char** pt, int nCol){$/;"	f
 print_array_double	AronCLibNew.h	/^void print_array_double(double* pt, int len, int nCol){$/;"	f
 print_array_float	AronCLibNew.h	/^void print_array_float(float* pt, int len, int nCol){$/;"	f
 print_array_int	AronCLibNew.h	/^void print_array_int(int* pt, int len, int nCol){$/;"	f
+print_matrix_float	AronCLibNew.h	/^void print_matrix_float(float* arr, int len, int width){$/;"	f
+print_matrix_int	AronCLibNew.h	/^void print_matrix_int(int* arr, int len, int width){$/;"	f
+print_pair	AronCLibDev.h	/^void print_pair(pair p){$/;"	f
 quickSortAny	AronCLibNew.h	/^void quickSortAny(void** ls, int (*cmp)(const void*, const void*), int lo, int hi) {$/;"	f
 quickSortInt	AronCLibNew.h	/^void quickSortInt(long lo, long hi, int* arr){$/;"	f
 quick_sort	AronCLibNew.h	/^void quick_sort(int* arr, int lo, int hi) {$/;"	f
 randomNum	AronCLibNew.h	/^long randomNum(long seed){$/;"	f
+remove_zero	AronCLibDev.h	/^void remove_zero(int* arr, int len){$/;"	f
 repeatChar	AronCLibNew.h	/^char* repeatChar(int n, char c){$/;"	f
+rowDiv	AronCLibDev.h	/^void rowDiv(int n, int* arr, int r0, int w){$/;"	f
 splitPath	AronCLibNew.h	/^char** splitPath(char* buf, int bufLen, int *retRow, char c){$/;"	f
 splitStrChar	AronCLibNew.h	/^char** splitStrChar(char* buf, int bufLen, int *retRow, char c){$/;"	f
 strToInt	AronCLibNew.h	/^int strToInt(char* str){$/;"	f
 strToNumBase	AronCLibNew.h	/^int strToNumBase(const char* sp, int base){$/;"	f
+subRow	AronCLibNew.h	/^void subRow(int* arr, int r0, int r1, int w){$/;"	f
 swap	AronCLibNew.h	/^void swap(int* arr, int i, int j) {$/;"	f
+t_array_int	AronCLibNew.h	/^bool t_array_int(int len1, int* arr1, int len2, int* arr2, char* msg) {$/;"	f
 t_bool	AronCLibNew.h	/^bool t_bool(bool n, bool m, char* msg){$/;"	f
 t_charPt	AronCLibNew.h	/^bool t_charPt(char* s1, char* s2, char* msg){$/;"	f
 t_doublePt	AronCLibNew.h	/^bool t_doublePt(int m, double* s1, int n, double* s2, char* msg){$/;"	f
 t_int	AronCLibNew.h	/^bool t_int(int m, int n, char* msg){$/;"	f
 t_intPtr	AronCLibNew.h	/^bool t_intPtr(int len1, int* arr1, int len2, int* arr2, char* msg) {$/;"	f
+t_str	AronCLibNew.h	/^bool t_str(char* s1, char* s2, char* msg){$/;"	f
 t_voidPt	AronCLibNew.h	/^bool t_voidPt(void* pt0, void* pt1, char* msg){$/;"	f
 time_micro	AronCLibNew.h	/^uint64_t time_micro() {$/;"	f
 time_nano	AronCLibNew.h	/^uint64_t time_nano() {$/;"	f
@@ -78,3 +123,5 @@ toLower	AronCLibNew.h	/^int toLower(int c){$/;"	f
 toLowerStr	AronCLibNew.h	/^char* toLowerStr(char* s){$/;"	f
 toUpper	AronCLibNew.h	/^int toUpper(int c){$/;"	f
 toUpperStr	AronCLibNew.h	/^char* toUpperStr(char* s){$/;"	f
+x	AronCLibDev.h	/^  int x;$/;"	m	struct:pair
+y	AronCLibDev.h	/^  int y;$/;"	m	struct:pair

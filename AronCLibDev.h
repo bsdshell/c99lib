@@ -43,7 +43,6 @@ void rowDiv(int n, int* arr, int r0, int w){
   }
 }
 
-
 int gcd_array(int* arr, int len){
   if(len > 0){
 	int a = arr[0];
